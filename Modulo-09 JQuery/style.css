@@ -57,3 +57,40 @@ button:hover{
 #btnCancel:hover{
     background-color: rgb(244, 75, 75);
 }
+
+ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul li{
+    max-width: 25%;
+    list-style: none;
+    position: relative;
+    max-height: 200px;
+    overflow-y: hidden;
+}
+
+ul li img{
+    width: 100%;
+}
+
+.img-real{
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    transition: all ease .6s;
+}
+
+.img-real a{
+    color: #fff;
+    text-decoration: none;
+}
+
+ul li:hover .img-real{
+    opacity: 1;
+}

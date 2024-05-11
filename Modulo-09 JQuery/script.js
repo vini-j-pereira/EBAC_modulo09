@@ -9,8 +9,19 @@ $(document).ready(function(){
     })
 
     $('form').on('submit', function(e) {
-        console.log('submit')
         e.preventDefault();
+        const endeImgNova = $('#endeImgNova').val();
+        const novoItem = $('<li style="display: none"></li>');
+        $(`<img src="${endeImgNova}" />`).appendTo(novoItem);
+        $(`
+        <div class="img-real">
+            <a href="${endeImgNova}" target="_blank" title="Ver imagem em tamanho real.">Ver imagem em tamanho real.
+            </a>
+        </div>
+        `).appendTo(novoItem);
+        $(novoItem).appendTo('ul');
+        $(novoItem).fadeIn(1000);
+        $('#endeImgNova').val('');
     })
 
 })

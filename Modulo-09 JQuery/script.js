@@ -1,7 +1,11 @@
 $(document).ready(function(){
 
     $('header button').click(function(){
-        alert('Expandir Formulario!')
+        $('form').slideDown();
+    })
+
+    $('#btnCancel').click(function(){
+        $('form').slideUp();
     })
 
     $('form').on('submit', function(e) {

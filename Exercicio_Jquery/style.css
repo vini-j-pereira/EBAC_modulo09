@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 200px;
+}
+
+.inputs{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.inputs input{
+    padding: 10px 20px;
+    margin-left: 5px;
+}
+
+.inputs input::placeholder{
+    color: #c6c6c6
+}
+
+#btnCadastrar{
+    padding: 10px;
+    cursor: pointer;
+}
+
+.list-tarefas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.list-tarefas ul li{
+    margin-bottom: 5px;
+}

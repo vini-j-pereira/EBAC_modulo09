@@ -40,4 +40,11 @@
 
 .list-tarefas ul li{
     margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.completa{
+    text-decoration: line-through;
+    color: #c6c6c6;
+    list-style: none;
 }

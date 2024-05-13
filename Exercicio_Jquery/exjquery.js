@@ -10,6 +10,11 @@ $(document).ready(function(){
         $(`<p>${tarefasList}</p>`).appendTo(novaTarefa);
         $(novaTarefa).appendTo('ul')
         $('#inputTarefas').val('');
+
+    })
+
+    $(document).on('click', 'li', function(){
+        $(this).toggleClass('completa');
     })
 })
 
